@@ -105,6 +105,9 @@ const MoviePage = () => {
             director={item.director}
             duration={item.duration}
             rate={item.rate}
+            genre={item.genre.map((element, index) => (
+              <p key={index}>{element}</p>
+            ))} 
             />
             <Link to={`/detailpage/${encodeURIComponent(item.title)}`} className='link'>Read More</Link>
           </article>
