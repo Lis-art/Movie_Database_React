@@ -47,7 +47,7 @@ const MoviePage = () => {
 
   const rate = () => {
     const copyArray = [...MovieData];
-    copyArray.sort((a, y) => y.rate - a.rate);
+    copyArray.sort((a, b) => b.rate - a.rate);
     setData(copyArray);
   };
 
